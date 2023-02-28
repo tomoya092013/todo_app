@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/python-3
+{
+  "name": "dev",
+  "build": {
+    "dockerfile": "../frontend/Dockerfile",
+    "context": ".."
+  },
+  // Set *default* container specific settings.json values on container create.
+  // Add the IDs of extensions you want installed when the container is created.
+  "customizations": {
+    "vscode": {
+      "extensions": ["editorconfig.editorconfig", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+      "settings": {
+        "editor.defaultFormatter": null,
+        "editor.formatOnSave": true,
+        "editor.rulers": [120],
+        "eslint.nodePath": "./frontend/node_modules",
+        "eslint.run": "onType",
+        "eslint.options": {
+          "overrideConfigFile": "./frontend/.eslintrc.json"
+        },
+        "[javascript]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "chmod 755 ./.devcontainer/init.sh && ./.devcontainer/init.sh"
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  // "remoteUser": "vscode"
+}
