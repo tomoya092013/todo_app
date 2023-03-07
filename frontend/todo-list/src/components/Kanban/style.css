@@ -1,0 +1,31 @@
+.kanbanArea{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todoArea{
+  width: 200px;
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  height: 60vh;
+}
+
+.completedTodoArea{
+  width: 200px;
+  background-color: darksalmon;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  height: 60vh;
+}
+
+.todoList{
+  margin-top: 10px;
+}
+
+.addTextArea{
+  margin-top: 10px;
+}

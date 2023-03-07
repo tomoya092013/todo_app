@@ -1,0 +1,9 @@
+.baseDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.app{
+  max-width: 800px;
+  min-width: 600px;
+}
