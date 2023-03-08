@@ -4,3 +4,8 @@ export type TodoType = {
   task: string;
   isCompleted: boolean;
 };
+
+export type TodoListState = {
+  todos: TodoType[];
+  setTodos: Function;
+};

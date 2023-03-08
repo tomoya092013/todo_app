@@ -1,7 +1,13 @@
 import React from 'react';
-import { TodoType } from '../../../type';
 
-const CompleteTodo = (props: TodoType) => {
+import { TodoListState, TodoType } from '../../../type';
+
+// type Props = {
+//   todos: TodoType[];
+//   setTodos: Function;
+// };
+
+const CompleteTodo = (props: TodoListState) => {
   const { todos, setTodos } = props;
   const completedTodos = todos.filter((todo: TodoType) => todo.isCompleted === true);
 

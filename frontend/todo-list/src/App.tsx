@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
 import './App.css';
+
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+
 import DashBoard from './components/DashBoad/DashBoard';
 import Kanban from './components/Kanban/Kanban';
 import { TodoType } from './type';

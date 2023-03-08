@@ -1,11 +1,17 @@
+import './style.css';
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+import { TodoType } from '../../type';
 import CompleteTodo from './CompleteTodo/CompleteTodo';
 import UnCompleteTodo from './unCompleteTodo/UnComplete';
-import './style.css';
-import { TodoType } from '../../type';
 
-const Kanban = (props: TodoType) => {
+type Props = {
+  todos: TodoType[];
+  setTodos: Function;
+};
+const Kanban = (props: Props) => {
   const { todos, setTodos } = props;
   // useEffect(() => {
   //   console.log(todos);

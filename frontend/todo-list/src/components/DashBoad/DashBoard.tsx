@@ -1,9 +1,15 @@
+import './style.css';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
+
 import { TodoType } from '../../type';
 
-const DashBoard = (props: TodoType) => {
+type Props = {
+  todos: TodoType[];
+};
+
+const DashBoard = (props: Props) => {
   const unCompletedTodos = props.todos.filter((todo) => todo.isCompleted === false);
   const completedTodos = props.todos.filter((todo) => todo.isCompleted === true);
 
