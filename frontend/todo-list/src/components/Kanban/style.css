@@ -30,3 +30,7 @@
 .addTextArea{
   margin-top: 10px;
 }
+
+.textLength{
+  text-align: left;
+}
